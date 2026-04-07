@@ -2,6 +2,7 @@ package com.boyninja1555.javabooklib.typing;
 
 import org.jetbrains.annotations.NotNull;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -17,6 +18,6 @@ public record BookChapter(@NotNull List<BookPage> pages) {
      * @param pages Mutable list of BookPage(s)
      */
     public static @NotNull BookChapter of(@NotNull List<BookPage> pages) {
-        return new BookChapter(pages);
+        return new BookChapter(new ArrayList<>(pages));
     }
 }
