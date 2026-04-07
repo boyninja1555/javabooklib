@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.boyninja1555"
-version = "2"
+version = "3"
 
 publishing {
     publications {

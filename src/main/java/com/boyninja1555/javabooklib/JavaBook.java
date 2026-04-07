@@ -61,7 +61,7 @@ public record JavaBook(@NotNull BookHeader header, @NotNull List<BookChapter> ch
      * @return New JavaBook
      */
     public static @NotNull JavaBook of(@NotNull String title, @NotNull String author, @NotNull List<BookChapter> chapters) {
-        return new JavaBook(BookHeader.of(title, author), chapters);
+        return new JavaBook(BookHeader.of(title, author), new ArrayList<>(chapters));
     }
 
     /**
